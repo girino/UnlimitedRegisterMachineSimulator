@@ -2,7 +2,6 @@
 import sys
 import random
 import math
-from tqdm import tqdm
 
 
 MAX_ITER=10
@@ -246,11 +245,11 @@ if __name__ == "__main__":
     print("No command line args provided. will try to run a genetic algorithm to guess the best solution")
 
     # build valid cmds
-    regs = 3
-    inst_size = 9
+    regs = 5
+    inst_size = 15
     all_valid = build_all_simple(1, 'Z') + build_all_simple(1, 'S') + build_all_c(regs) + build_all_j(regs+1, inst_size)
 
-    ga = GA(1500, all_valid, 15)
+    ga = GA(15000, all_valid, 15)
     for i in range(10000):
         ga.nextgen()
         if (i % 10) == 0:
