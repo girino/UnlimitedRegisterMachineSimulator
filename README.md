@@ -1,6 +1,10 @@
 # UnlimitedRegisterMachineSimulator
 
-This problem was proposed on facebook, i am buiding a simulator for the URM so we can more easily solve the problem.
+So, this all started with a problem proposed in facebook. Then it grew into a GA to solve the problem. Then it grew into a generic GP for the proposed theoretical machine. So here it is. A GA/GP to solve generic problems using a theoretical Unlimited Register Machine.
+
+No docs provided, use at your own risk.
+
+## The original problem
 
 Here’s a little problem for Christmas and you won’t be able to cheat and look the answer up online, (I know because I tried), it took a friend and I several days to work out the answer!
 An Unlimited Register Machine (URM) has an unlimited number of registers labelled R1, R2, R3, ..., Rn. The contents of these registers are called r1, r2, r3, ... etc. & all contain zero by default.
